@@ -10,7 +10,7 @@ public class Taller21260326 {
 
         Lista lista = new Lista();
 
-        System.out.println("Ingrese los valores\" + (n - 1) + \"  con un espacio entre cada valor:");
+        System.out.println("Ingrese los " + (n - 1) + " valores con un espacio entre cada valor:");
 
         for (int i = 0; i < n - 1; i++) {
             int valor = sc.nextInt();
