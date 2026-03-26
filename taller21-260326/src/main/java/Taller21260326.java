@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Taller21060326 {
+public class Taller21260326 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -8,7 +8,7 @@ public class Taller21060326 {
         System.out.println("Ingrese n:");
         int n = sc.nextInt();
 
-        ListaSimple lista = new ListaSimple();
+        Lista lista = new Lista();
 
         System.out.println("Ingrese los valores:");
 
