@@ -1,21 +1,30 @@
 import java.util.Scanner;
 
-public class Taller21260326 {
+public class Taller21060326 {
     public static void main(String[] args) {
-        System.out.println("Ingrese un valor");
+
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Ingrese n:");
         int n = sc.nextInt();
 
-        
-        Lista lista = new Lista();
-         System.out.println("Ingrese los " + (n - 1) + " valores de la lista:");
- 
-        
+        ListaSimple lista = new ListaSimple();
+
+        System.out.println("Ingrese los valores:");
+
         for (int i = 0; i < n - 1; i++) {
             int valor = sc.nextInt();
             lista.insertar(valor);
         }
-    }       
 
+        System.out.println("Lista:");
+        lista.mostrar();
+
+        int sumaLista = lista.sumar();
+        int sumaTotal = n * (n + 1) / 2;
+
+        int faltante = sumaTotal - sumaLista;
+
+        System.out.println("Faltante: " + faltante);
     }
+}
