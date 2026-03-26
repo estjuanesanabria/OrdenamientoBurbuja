@@ -1,6 +1,5 @@
-
-public class Nodo {
-     int dato;
+class Nodo {
+    int dato;
     Nodo siguiente;
 
     public Nodo(int dato) {
@@ -8,4 +7,3 @@ public class Nodo {
         this.siguiente = null;
     }
 }
-

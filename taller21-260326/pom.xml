@@ -10,4 +10,5 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>Taller21260326</exec.mainClass>
     </properties>
+    <name>taller21-260326</name>
 </project>
