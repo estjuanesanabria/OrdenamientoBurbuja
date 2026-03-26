@@ -16,7 +16,7 @@ class Lista {
             actual.siguiente = nuevo;
         }
     }
-    
+
     public int sumar() {
         int suma = 0;
         Nodo actual = cabeza;
@@ -25,7 +25,18 @@ class Lista {
             suma = suma + actual.dato;
             actual = actual.siguiente;
         }
-    
 
+        return suma;
+    }
+
+    public void mostrar() {
+        Nodo actual = cabeza;
+
+        while (actual != null) {
+            System.out.print(actual.dato + " ");
+            actual = actual.siguiente;
+        }
+
+        System.out.println();
     }
 }
