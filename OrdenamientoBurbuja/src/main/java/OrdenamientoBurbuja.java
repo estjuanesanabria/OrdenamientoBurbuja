@@ -1,26 +1,21 @@
 import java.util.Arrays;
 
-
 public class OrdenamientoBurbuja {
+    public static void main(String[] args) {
+        int[] arr = {45, 22, 11, -4, 7, 3};
 
-   public static void main(String[] args) { 
-       int [] arr = {45, 22, 11, -4, 7, 3};
-   
+        System.out.println("Antes: " + Arrays.toString(arr));
 
-System.out.println (Arrays.toString(arr));
-
-// ordenar el arreglo
-
-int n = arr.length;
-
-for(int i= 0; i < n-1; i++) { 
-        for (int j = i+1; j < n; j++){ 
-            if (arr[i] > arr[j]){
-                 int aux = arr[j];
-                 arr[j] = arr[i];
-                 arr[i] = aux;
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int aux = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = aux;
+                }
             }
-      }      
+        }
+
+        System.out.println("Después: " + Arrays.toString(arr));
+    }
 }
-}
-   }
